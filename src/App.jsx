@@ -43,15 +43,18 @@ function App() {
 			}
 		);
 
-		gsap.from(
-			element.querySelector('#section1 .img img:first-child'),
+		gsap.fromTo(
+			element.querySelector('#section1 .leftSection .left_title'),
+			{
+				opacity:1,
+			},
 			{
 				opacity:0,
-				y:200,
+				y:-50,
 				scrollTrigger: {
 					trigger: element.querySelector("#section1"),
-					start: "1% 1%",
-					end: "3% 1%",
+					start: "27% 1%",
+					end: "30% 1%",
 					// markers:true,
 					scrub: true,
 					ease: Power2.easeOut,
@@ -60,10 +63,10 @@ function App() {
 		)
 
 		gsap.from(
-			element.querySelector('#section1 .img img:last-child'),
+			element.querySelector('#section1 .img img:first-child'),
 			{
 				opacity:0,
-				y:-200,
+				y:200,
 				scrollTrigger: {
 					trigger: element.querySelector("#section1"),
 					start: "1% 1%",
@@ -87,6 +90,22 @@ function App() {
 					trigger: element.querySelector("#section1"),
 					start: "27% 1%",
 					end: "30% 1%",
+					// markers:true,
+					scrub: true,
+					ease: Power2.easeOut,
+				},
+			}
+		)
+
+		gsap.from(
+			element.querySelector('#section1 .img img:last-child'),
+			{
+				opacity:0,
+				y:-200,
+				scrollTrigger: {
+					trigger: element.querySelector("#section1"),
+					start: "1% 1%",
+					end: "3% 1%",
 					// markers:true,
 					scrub: true,
 					ease: Power2.easeOut,
@@ -134,6 +153,41 @@ function App() {
 				},
 			}
 		);
+
+		gsap.from(
+			element.querySelector('#section2 .leftSection .left_title'),
+			{
+				opacity:0,
+				y:50,
+				scrollTrigger: {
+					trigger: element.querySelector("#section2"),
+					start: "30% 1%",
+					end: "60% 1%",
+					// markers:true,
+					scrub: true,
+					ease: Power2.easeOut,
+				},
+			}
+		)
+
+		gsap.fromTo(
+			element.querySelector('#section2 .leftSection .left_title'),
+			{
+				opacity:0,
+			},
+			{
+				opacity:0,
+				y:-50,
+				scrollTrigger: {
+					trigger: element.querySelector("#section2"),
+					start: "75% 1%",
+					end: "105% 1%",
+		// 			markers:true,
+					scrub: true,
+					ease: Power2.easeOut,
+				},
+			}
+		)
 
 		gsap.from(
 			element.querySelector('#section2 .img img:first-child'),
@@ -247,16 +301,35 @@ function App() {
 			}
 		);
 
-
 		gsap.from(
-			element.querySelector('#section3 .img img:first-child'),
+			element.querySelector('#section3 .leftSection .left_title'),
 			{
 				opacity:0,
-				y:200,
+				y:50,
 				scrollTrigger: {
 					trigger: element.querySelector("#section3"),
-					start: "105% 1%",
-					end: "107% 1%",
+					start: "75% 1%",
+					end: "105% 1%",
+					// markers:true,
+					scrub: true,
+					ease: Power2.easeOut,
+				},
+				duration: 1,
+			}
+		)
+
+		gsap.fromTo(
+			element.querySelector('#section3 .leftSection .left_title'),
+			{
+				opacity:0,
+			},
+			{
+				opacity:0,
+				y:-50,
+				scrollTrigger: {
+					trigger: element.querySelector("#section3"),
+					start: "120% 1%",
+					end: "150% 1%",
 					// markers:true,
 					scrub: true,
 					ease: Power2.easeOut,
@@ -266,10 +339,10 @@ function App() {
 		)
 
 		gsap.from(
-			element.querySelector('#section3 .img img:last-child'),
+			element.querySelector('#section3 .img img:first-child'),
 			{
 				opacity:0,
-				y:-200,
+				y:200,
 				scrollTrigger: {
 					trigger: element.querySelector("#section3"),
 					start: "105% 1%",
@@ -294,6 +367,23 @@ function App() {
 					trigger: element.querySelector("#section3"),
 					start: "118% 1%",
 					end: "120% 1%",
+					// markers:true,
+					scrub: true,
+					ease: Power2.easeOut,
+				},
+				duration: 1,
+			}
+		)
+
+		gsap.from(
+			element.querySelector('#section3 .img img:last-child'),
+			{
+				opacity:0,
+				y:-200,
+				scrollTrigger: {
+					trigger: element.querySelector("#section3"),
+					start: "105% 1%",
+					end: "107% 1%",
 					// markers:true,
 					scrub: true,
 					ease: Power2.easeOut,
@@ -362,6 +452,41 @@ function App() {
 				},
 			}
 		);
+
+		gsap.from(
+			element.querySelector('#section4 .leftSection .left_title'),
+			{
+				opacity:0,
+				y:50,
+				scrollTrigger: {
+					trigger: element.querySelector("#section4"),
+					start: "120% 1%",
+					end: "150% 1%",
+					// markers:true,
+					scrub: true,
+					ease: Power2.easeOut,
+				},
+			}
+		)
+
+		gsap.fromTo(
+			element.querySelector('#section4 .leftSection .left_title'),
+			{
+				opacity:0,
+			},
+			{
+				opacity:0,
+				y:-50,
+				scrollTrigger: {
+					trigger: element.querySelector("#section4"),
+					start: "165% 1%",
+					end: "195% 1%",
+		// 			markers:true,
+					scrub: true,
+					ease: Power2.easeOut,
+				},
+			}
+		)
 
 		gsap.from(
 			element.querySelectorAll('#section4 .img img:nth-child(1),#section4 .img img:nth-child(2)'),
@@ -509,6 +634,41 @@ function App() {
 		);
 
 		gsap.from(
+			element.querySelector('#section5 .leftSection .left_title'),
+			{
+				opacity:0,
+				y:50,
+				scrollTrigger: {
+					trigger: element.querySelector("#section5"),
+					start: "165% 1%",
+					end: "195% 1%",
+					// markers:true,
+					scrub: true,
+					ease: Power2.easeOut,
+				},
+			}
+		)
+
+		gsap.fromTo(
+			element.querySelector('#section5 .leftSection .left_title'),
+			{
+				opacity:0,
+			},
+			{
+				opacity:0,
+				y:-50,
+				scrollTrigger: {
+					trigger: element.querySelector("#section5"),
+					start: "210% 1%",
+					end: "240% 1%",
+		// 			markers:true,
+					scrub: true,
+					ease: Power2.easeOut,
+				},
+			}
+		)
+
+		gsap.from(
 			element.querySelector('#section5 .img .img_sec:last-child'),
 			{
 				opacity:0,
@@ -654,6 +814,41 @@ function App() {
 		);
 
 		gsap.from(
+			element.querySelector('#section6 .leftSection .left_title'),
+			{
+				opacity:0,
+				y:50,
+				scrollTrigger: {
+					trigger: element.querySelector("#section6"),
+					start: "210% 1%",
+					end: "240% 1%",
+					// markers:true,
+					scrub: true,
+					ease: Power2.easeOut,
+				},
+			}
+		)
+
+		gsap.fromTo(
+			element.querySelector('#section6 .leftSection .left_title'),
+			{
+				opacity:0,
+			},
+			{
+				opacity:0,
+				y:-50,
+				scrollTrigger: {
+					trigger: element.querySelector("#section6"),
+					start: "255% 1%",
+					end: "285% 1%",
+		// 			markers:true,
+					scrub: true,
+					ease: Power2.easeOut,
+				},
+			}
+		)
+
+		gsap.from(
 			element.querySelector('#section6 .img img'),
 			{
 				opacity:0,
@@ -727,6 +922,23 @@ function App() {
 				},
 			}
 		);
+
+		gsap.from(
+			element.querySelector('#section7 .leftSection .left_title'),
+			{
+				opacity:0,
+				y:50,
+				scrollTrigger: {
+					trigger: element.querySelector("#section7"),
+					start: "255% 1%",
+					end: "290% 1%",
+					// markers:true,
+					scrub: true,
+					ease: Power2.easeOut,
+				},
+				duration: 1,
+			}
+		)
 
 		gsap.from(
 			element.querySelector('#section7 .img img:first-child'),
