@@ -44,7 +44,7 @@ function App() {
 		);
 
 		gsap.fromTo(
-			element.querySelector('#section1 .leftSection .left_title'),
+			element.querySelectorAll('#section1 .leftSection .left_title, #section1 .leftSection .left_footer'),
 			{
 				opacity:1,
 			},
@@ -155,7 +155,7 @@ function App() {
 		);
 
 		gsap.from(
-			element.querySelector('#section2 .leftSection .left_title'),
+			element.querySelectorAll('#section2 .leftSection .left_title, #section2 .leftSection .left_footer'),
 			{
 				opacity:0,
 				y:50,
@@ -171,7 +171,7 @@ function App() {
 		)
 
 		gsap.fromTo(
-			element.querySelector('#section2 .leftSection .left_title'),
+			element.querySelectorAll('#section2 .leftSection .left_title, #section2 .leftSection .left_footer'),
 			{
 				opacity:0,
 			},
@@ -302,7 +302,7 @@ function App() {
 		);
 
 		gsap.from(
-			element.querySelector('#section3 .leftSection .left_title'),
+			element.querySelectorAll('#section3 .leftSection .left_title, #section3 .leftSection .left_footer'),
 			{
 				opacity:0,
 				y:50,
@@ -319,7 +319,7 @@ function App() {
 		)
 
 		gsap.fromTo(
-			element.querySelector('#section3 .leftSection .left_title'),
+			element.querySelectorAll('#section3 .leftSection .left_title, #section3 .leftSection .left_footer'),
 			{
 				opacity:0,
 			},
@@ -454,7 +454,7 @@ function App() {
 		);
 
 		gsap.from(
-			element.querySelector('#section4 .leftSection .left_title'),
+			element.querySelectorAll('#section4 .leftSection .left_title,#section4 .leftSection .left_footer'),
 			{
 				opacity:0,
 				y:50,
@@ -470,7 +470,7 @@ function App() {
 		)
 
 		gsap.fromTo(
-			element.querySelector('#section4 .leftSection .left_title'),
+			element.querySelectorAll('#section4 .leftSection .left_title,#section4 .leftSection .left_footer'),
 			{
 				opacity:0,
 			},
@@ -634,7 +634,7 @@ function App() {
 		);
 
 		gsap.from(
-			element.querySelector('#section5 .leftSection .left_title'),
+			element.querySelectorAll('#section5 .leftSection .left_title,#section5 .leftSection .left_footer'),
 			{
 				opacity:0,
 				y:50,
@@ -650,7 +650,7 @@ function App() {
 		)
 
 		gsap.fromTo(
-			element.querySelector('#section5 .leftSection .left_title'),
+			element.querySelectorAll('#section5 .leftSection .left_title,#section5 .leftSection .left_footer'),
 			{
 				opacity:0,
 			},
@@ -814,7 +814,7 @@ function App() {
 		);
 
 		gsap.from(
-			element.querySelector('#section6 .leftSection .left_title'),
+			element.querySelectorAll('#section6 .leftSection .left_title,#section6 .leftSection .left_footer'),
 			{
 				opacity:0,
 				y:50,
@@ -830,7 +830,7 @@ function App() {
 		)
 
 		gsap.fromTo(
-			element.querySelector('#section6 .leftSection .left_title'),
+			element.querySelectorAll('#section6 .leftSection .left_title,#section6 .leftSection .left_footer'),
 			{
 				opacity:0,
 			},
@@ -924,7 +924,7 @@ function App() {
 		);
 
 		gsap.from(
-			element.querySelector('#section7 .leftSection .left_title'),
+			element.querySelectorAll('#section7 .leftSection .left_title,#section7 .leftSection .left_footer'),
 			{
 				opacity:0,
 				y:50,
