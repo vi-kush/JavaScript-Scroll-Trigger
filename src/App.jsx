@@ -19,9 +19,12 @@ function App() {
 	const sec6 = useRef(null);
 	const sec7 = useRef(null);
 
+
 	useEffect(() => {
 		const element = container.current;
-		console.log(element.querySelector("#section1"))
+
+		element.scrollIntoView({block:"start"})
+
 		gsap.fromTo(
 			element.querySelector("#section1"),
 			{
@@ -31,19 +34,51 @@ function App() {
 				opacity: 0,
 				scrollTrigger: {
 					trigger: element.querySelector("#section1"),
-					start: "3% 2%",
-					end: "20% 2%",
+					start: "30% 2%",
+					end: "60% 2%",
 					// markers:true,
 					scrub: true,
 					ease: Power2.easeOut,
 				},
 			}
 		);
+
+		gsap.from(
+			element.querySelector('#section1 .img img:first-child'),
+			{
+				opacity:0,
+				y:200,
+				scrollTrigger: {
+					trigger: element.querySelector("#section1"),
+					start: "1% 1%",
+					end: "3% 1%",
+					// markers:true,
+					scrub: true,
+					ease: Power2.easeOut,
+				},
+			}
+		)
+
+		gsap.from(
+			element.querySelector('#section1 .img img:last-child'),
+			{
+				opacity:0,
+				y:-200,
+				scrollTrigger: {
+					trigger: element.querySelector("#section1"),
+					start: "1% 1%",
+					end: "3% 1%",
+					// markers:true,
+					scrub: true,
+					ease: Power2.easeOut,
+				},
+			}
+		)
 	  }, []);
 
 	  useEffect(() => {
 		const element = container.current;
-		console.log(element.querySelector("#section2"))
+
 		gsap.fromTo(
 			element.querySelector("#section2"),
 			{
@@ -53,8 +88,8 @@ function App() {
 				opacity: 1,
 				scrollTrigger: {
 					trigger: element.querySelector("#section2"),
-					start: "5% 2%",
-					end: "20% 2%",
+					start: "30% 2%",
+					end: "60% 2%",
 					// markers:true,
 					scrub: true,
 					ease: Power2.easeOut,
@@ -65,7 +100,7 @@ function App() {
 
 	  useEffect(() => {
 		const element = container.current;
-		console.log(element.querySelector("#section2"))
+
 		gsap.fromTo(
 			element.querySelector("#section2"),
 			{
@@ -75,8 +110,8 @@ function App() {
 				opacity: 0,
 				scrollTrigger: {
 					trigger: element.querySelector("#section2"),
-					start: "25% 2%",
-					end: "35% 2%",
+					start: "75% 2%",
+					end: "105% 2%",
 					// markers:true,
 					scrub: true,
 					ease: Power2.easeOut,
@@ -88,7 +123,7 @@ function App() {
 	  
 	  useEffect(() => {
 		const element = container.current;
-		console.log(element.querySelector("#section3"))
+
 		gsap.fromTo(
 			element.querySelector("#section3"),
 			{
@@ -98,8 +133,8 @@ function App() {
 				opacity: 1,
 				scrollTrigger: {
 					trigger: element.querySelector("#section3"),
-					start: "25% 2%",
-					end: "35% 2%",
+					start: "75% 2%",
+					end: "105% 2%",
 					// markers:true,
 					scrub: true,
 					ease: Power2.easeOut,
@@ -110,7 +145,7 @@ function App() {
 
 	  useEffect(() => {
 		const element = container.current;
-		console.log(element.querySelector("#section3"))
+
 		gsap.fromTo(
 			element.querySelector("#section3"),
 			{
@@ -120,8 +155,8 @@ function App() {
 				opacity: 0,
 				scrollTrigger: {
 					trigger: element.querySelector("#section3"),
-					start: "40% 2%",
-					end: "50% 2%",
+					start: "120% 2%",
+					end: "150% 2%",
 					// markers:true,
 					scrub: true,
 					ease: Power2.easeOut,
@@ -133,7 +168,7 @@ function App() {
 	  
 	  useEffect(() => {
 		const element = container.current;
-		console.log(element.querySelector("#section4"))
+
 		gsap.fromTo(
 			element.querySelector("#section4"),
 			{
@@ -143,8 +178,8 @@ function App() {
 				opacity: 1,
 				scrollTrigger: {
 					trigger: element.querySelector("#section4"),
-					start: "40% 2%",
-					end: "50% 2%",
+					start: "120% 2%",
+					end: "150% 2%",
 					// markers:true,
 					scrub: true,
 					ease: Power2.easeOut,
@@ -155,7 +190,7 @@ function App() {
 
 	  useEffect(() => {
 		const element = container.current;
-		console.log(element.querySelector("#section4"))
+
 		gsap.fromTo(
 			element.querySelector("#section4"),
 			{
@@ -165,8 +200,8 @@ function App() {
 				opacity: 0,
 				scrollTrigger: {
 					trigger: element.querySelector("#section4"),
-					start: "55% 2%",
-					end: "65% 2%",
+					start: "165% 2%",
+					end: "195% 2%",
 					// markers:true,
 					scrub: true,
 					ease: Power2.easeOut,
@@ -177,7 +212,7 @@ function App() {
 
 	  useEffect(() => {
 		const element = container.current;
-		console.log(element.querySelector("#section5"))
+
 		gsap.fromTo(
 			element.querySelector("#section5"),
 			{
@@ -187,8 +222,8 @@ function App() {
 				opacity: 1,
 				scrollTrigger: {
 					trigger: element.querySelector("#section5"),
-					start: "55% 2%",
-					end: "65% 2%",
+					start: "165% 2%",
+					end: "195% 2%",
 					// markers:true,
 					scrub: true,
 					ease: Power2.easeOut,
@@ -199,7 +234,7 @@ function App() {
 
 	  useEffect(() => {
 		const element = container.current;
-		console.log(element.querySelector("#section5"))
+
 		gsap.fromTo(
 			element.querySelector("#section5"),
 			{
@@ -209,8 +244,8 @@ function App() {
 				opacity: 0,
 				scrollTrigger: {
 					trigger: element.querySelector("#section5"),
-					start: "70% 2%",
-					end: "80% 2%",
+					start: "210% 2%",
+					end: "240% 2%",
 					// markers:true,
 					scrub: true,
 					ease: Power2.easeOut,
@@ -221,7 +256,7 @@ function App() {
 
 	  useEffect(() => {
 		const element = container.current;
-		console.log(element.querySelector("#section6"))
+
 		gsap.fromTo(
 			element.querySelector("#section6"),
 			{
@@ -231,8 +266,8 @@ function App() {
 				opacity: 1,
 				scrollTrigger: {
 					trigger: element.querySelector("#section6"),
-					start: "70% 2%",
-					end: "80% 2%",
+					start: "210% 2%",
+					end: "240% 2%",
 					// markers:true,
 					scrub: true,
 					ease: Power2.easeOut,
@@ -243,7 +278,7 @@ function App() {
 
 	  useEffect(() => {
 		const element = container.current;
-		console.log(element.querySelector("#section6"))
+
 		gsap.fromTo(
 			element.querySelector("#section6"),
 			{
@@ -253,8 +288,8 @@ function App() {
 				opacity: 0,
 				scrollTrigger: {
 					trigger: element.querySelector("#section6"),
-					start: "85% 2%",
-					end: "95% 2%",
+					start: "255% 2%",
+					end: "285% 2%",
 					// markers:true,
 					scrub: true,
 					ease: Power2.easeOut,
@@ -266,7 +301,6 @@ function App() {
 	  
 	  useEffect(() => {
 		const element = container.current;
-		console.log(element.querySelector("#section7"))
 		gsap.fromTo(
 			element.querySelector("#section7"),
 			{
@@ -276,8 +310,8 @@ function App() {
 				opacity: 1,
 				scrollTrigger: {
 					trigger: element.querySelector("#section7"),
-					start: "85% 2%",
-					end: "100% 2%",
+					start: "255% 2%",
+					end: "290% 2%",
 					// markers:true,
 					scrub: true,
 					ease: Power2.easeOut,
@@ -390,7 +424,7 @@ function App() {
 						<div className="img" style={{display:"block"}}>
 							<img alt="" style={{width:"50%",maxWidth:"300px",top:"-35px",left:"0px",position:"absolute"}} src="/images/pizza_box.png"/>
 							<img alt="" style={{top:"-140px",maxWidth:"169px",right:"30px",position:"absolute",width:"28%"}} src="/images/dominos-bread.png"/>
-							<img alt="" style={{top:"120px",maxWidth:"200px",right:"150px",position:"absolute",width:"35%"}} src="/images/developers-for-social-media-app.png"/>
+							<img alt="" style={{top:"120px",maxWidth:"200px",right:"125px",position:"absolute",width:"35%"}} src="/images/developers-for-social-media-app.png"/>
 							<img alt="" style={{bottom:"-20px",maxWidth:"240px",left:"75px",position:"absolute",width:"40%"}} src="/images/domi-img1.png"/>
 							<img alt="" style={{bottom:"-80px",maxWidth:"300px",right:"-10px",position:"absolute",width:"50%"}} src="/images/dominos-bread1.png"/>
 						</div>
