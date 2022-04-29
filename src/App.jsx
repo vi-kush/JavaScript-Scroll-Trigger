@@ -1,4 +1,3 @@
-import 'react-circular-progressbar/dist/styles.css';
 import './App.css';
 import Curve from './component/Curve';
 import { gsap, Power2 } from 'gsap';
