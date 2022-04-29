@@ -74,6 +74,44 @@ function App() {
 				},
 			}
 		)
+
+		gsap.fromTo(
+			element.querySelector('#section1 .img img:first-child'),
+			{
+				opacity:1,
+			},
+			{
+				opacity:0,
+				y:-200,
+				scrollTrigger: {
+					trigger: element.querySelector("#section1"),
+					start: "27% 1%",
+					end: "30% 1%",
+					// markers:true,
+					scrub: true,
+					ease: Power2.easeOut,
+				},
+			}
+		)
+
+		gsap.fromTo(
+			element.querySelector('#section1 .img img:last-child'),
+			{
+				opacity:1,
+			},
+			{
+				opacity:0,
+				y:200,
+				scrollTrigger: {
+					trigger: element.querySelector("#section1"),
+					start: "27% 1%",
+					end: "30% 1%",
+					// markers:true,
+					scrub: true,
+					ease: Power2.easeOut,
+				},
+			}
+		)
 	  }, []);
 
 	  useEffect(() => {
@@ -96,10 +134,76 @@ function App() {
 				},
 			}
 		);
-	  }, []);
 
-	  useEffect(() => {
-		const element = container.current;
+		gsap.from(
+			element.querySelector('#section2 .img img:first-child'),
+			{
+				opacity:0,
+				y:200,
+				scrollTrigger: {
+					trigger: element.querySelector("#section2"),
+					start: "60% 1%",
+					end: "63% 1%",
+					// markers:true,
+					scrub: true,
+					ease: Power2.easeOut,
+				},
+			}
+		)
+
+		gsap.fromTo(
+			element.querySelector('#section2 .img img:first-child'),
+			{
+				opacity:1,
+			},
+			{
+				opacity:0,
+				y:-200,
+				scrollTrigger: {
+					trigger: element.querySelector("#section2"),
+					start: "72% 1%",
+					end: "75% 1%",
+		// 			markers:true,
+					scrub: true,
+					ease: Power2.easeOut,
+				},
+			}
+		)
+
+		gsap.from(
+			element.querySelector('#section2 .img img:last-child'),
+			{
+				opacity:0,
+				y:-200,
+				scrollTrigger: {
+					trigger: element.querySelector("#section2"),
+					start: "60% 1%",
+					end: "63% 1%",
+					// markers:true,
+					scrub: true,
+					ease: Power2.easeOut,
+				},
+			}
+		)
+
+		gsap.fromTo(
+			element.querySelector('#section2 .img img:last-child'),
+			{
+				opacity:1,
+			},
+			{
+				opacity:0,
+				y:200,
+				scrollTrigger: {
+					trigger: element.querySelector("#section2"),
+					start: "72% 1%",
+					end: "75% 1%",
+		// 			markers:true,
+					scrub: true,
+					ease: Power2.easeOut,
+				},
+			}
+		)
 
 		gsap.fromTo(
 			element.querySelector("#section2"),
@@ -118,6 +222,7 @@ function App() {
 				},
 			}
 		);
+
 	  }, []);
 
 	  
@@ -141,10 +246,81 @@ function App() {
 				},
 			}
 		);
-	  }, []);
 
-	  useEffect(() => {
-		const element = container.current;
+
+		gsap.from(
+			element.querySelector('#section3 .img img:first-child'),
+			{
+				opacity:0,
+				y:200,
+				scrollTrigger: {
+					trigger: element.querySelector("#section3"),
+					start: "105% 1%",
+					end: "107% 1%",
+					// markers:true,
+					scrub: true,
+					ease: Power2.easeOut,
+				},
+				duration: 1,
+			}
+		)
+
+		gsap.from(
+			element.querySelector('#section3 .img img:last-child'),
+			{
+				opacity:0,
+				y:-200,
+				scrollTrigger: {
+					trigger: element.querySelector("#section3"),
+					start: "105% 1%",
+					end: "107% 1%",
+					// markers:true,
+					scrub: true,
+					ease: Power2.easeOut,
+				},
+				duration: 1,
+			}
+		)
+
+		gsap.fromTo(
+			element.querySelector('#section3 .img img:first-child'),
+			{
+				opacity:1,
+			},
+			{
+				opacity:0,
+				y:-200,
+				scrollTrigger: {
+					trigger: element.querySelector("#section3"),
+					start: "118% 1%",
+					end: "120% 1%",
+					// markers:true,
+					scrub: true,
+					ease: Power2.easeOut,
+				},
+				duration: 1,
+			}
+		)
+
+		gsap.fromTo(
+			element.querySelector('#section3 .img img:last-child'),
+			{
+				opacity:1,
+			},
+			{
+				opacity:0,
+				y:200,
+				scrollTrigger: {
+					trigger: element.querySelector("#section3"),
+					start: "118% 1%",
+					end: "120% 1%",
+					// markers:true,
+					scrub: true,
+					ease: Power2.easeOut,
+				},
+				duration: 1,
+			}
+		)
 
 		gsap.fromTo(
 			element.querySelector("#section3"),
@@ -186,10 +362,111 @@ function App() {
 				},
 			}
 		);
-	  }, []);
 
-	  useEffect(() => {
-		const element = container.current;
+		gsap.from(
+			element.querySelectorAll('#section4 .img img:nth-child(1),#section4 .img img:nth-child(2)'),
+			{
+				opacity:0,
+				x:-200,
+				scrollTrigger: {
+					trigger: element.querySelector("#section4"),
+					start: "151% 1%",
+					end: "154% 1%",
+					// markers:true,
+					scrub: true,
+					ease: Power2.easeOut,
+				},
+			}
+		)
+
+		gsap.fromTo(
+			element.querySelectorAll('#section4 .img img:nth-child(1),#section4 .img img:nth-child(2)'),
+			{
+				opacity:1,
+			},
+			{
+				opacity:0,
+				x:-200,
+				scrollTrigger: {
+					trigger: element.querySelector("#section4"),
+					start: "162% 1%",
+					end: "165% 1%",
+		// 			markers:true,
+					scrub: true,
+					ease: Power2.easeOut,
+				},
+			}
+		)
+
+		gsap.from(
+			element.querySelector('#section4 .img img:nth-child(3)'),
+			{
+				opacity:0,
+				y:200,
+				scrollTrigger: {
+					trigger: element.querySelector("#section4"),
+					start: "150% 1%",
+					end: "153% 1%",
+					// markers:true,
+					scrub: true,
+					ease: Power2.easeOut,
+				},
+			}
+		)
+
+		gsap.fromTo(
+			element.querySelector('#section4 .img img:nth-child(3)'),
+			{
+				opacity:1,
+			},
+			{
+				opacity:0,
+				y:-200,
+				scrollTrigger: {
+					trigger: element.querySelector("#section4"),
+					start: "162% 1%",
+					end: "165% 1%",
+		// 			markers:true,
+					scrub: true,
+					ease: Power2.easeOut,
+				},
+			}
+		)
+
+		gsap.from(
+			element.querySelectorAll('#section4 .img img:nth-child(4),#section4 .img img:nth-child(5)'),
+			{
+				opacity:0,
+				x:200,
+				scrollTrigger: {
+					trigger: element.querySelector("#section4"),
+					start: "151% 1%",
+					end: "154% 1%",
+					// markers:true,
+					scrub: true,
+					ease: Power2.easeOut,
+				},
+			}
+		)
+
+		gsap.fromTo(
+			element.querySelectorAll('#section4 .img img:nth-child(4),#section4 .img img:nth-child(5)'),
+			{
+				opacity:1,
+			},
+			{
+				opacity:0,
+				x:200,
+				scrollTrigger: {
+					trigger: element.querySelector("#section4"),
+					start: "162% 1%",
+					end: "165% 1%",
+		// 			markers:true,
+					scrub: true,
+					ease: Power2.easeOut,
+				},
+			}
+		)
 
 		gsap.fromTo(
 			element.querySelector("#section4"),
@@ -230,10 +507,111 @@ function App() {
 				},
 			}
 		);
-	  }, []);
 
-	  useEffect(() => {
-		const element = container.current;
+		gsap.from(
+			element.querySelector('#section5 .img .img_sec:last-child'),
+			{
+				opacity:0,
+				x:200,
+				scrollTrigger: {
+					trigger: element.querySelector("#section5"),
+					start: "195% 1%",
+					end: "198% 1%",
+					// markers:true,
+					scrub: true,
+					ease: Power2.easeOut,
+				},
+			}
+		)
+
+		gsap.fromTo(
+			element.querySelector('#section5 .img .img_sec:last-child'),
+			{
+				opacity:1,
+			},
+			{
+				opacity:0,
+				x:200,
+				scrollTrigger: {
+					trigger: element.querySelector("#section5"),
+					start: "207% 1%",
+					end: "210% 1%",
+		// 			markers:true,
+					scrub: true,
+					ease: Power2.easeOut,
+				},
+			}
+		)
+
+		gsap.from(
+			element.querySelector('#section5 .img .img_sec:first-child'),
+			{
+				opacity:0,
+				y:200,
+				scrollTrigger: {
+					trigger: element.querySelector("#section5"),
+					start: "195% 1%",
+					end: "198% 1%",
+					// markers:true,
+					scrub: true,
+					ease: Power2.easeOut,
+				},
+			}
+		)
+
+		gsap.fromTo(
+			element.querySelector('#section5 .img .img_sec:first-child'),
+			{
+				opacity:1,
+			},
+			{
+				opacity:0,
+				y:-200,
+				scrollTrigger: {
+					trigger: element.querySelector("#section5"),
+					start: "207% 1%",
+					end: "210% 1%",
+		// 			markers:true,
+					scrub: true,
+					ease: Power2.easeOut,
+				},
+			}
+		)
+
+		gsap.from(
+			element.querySelector('#section5 .img .img_sec:nth-child(2)'),
+			{
+				opacity:0,
+				y:-200,
+				scrollTrigger: {
+					trigger: element.querySelector("#section5"),
+					start: "195% 1%",
+					end: "198% 1%",
+					// markers:true,
+					scrub: true,
+					ease: Power2.easeOut,
+				},
+			}
+		)
+
+		gsap.fromTo(
+			element.querySelector('#section5 .img .img_sec:nth-child(2)'),
+			{
+				opacity:1,
+			},
+			{
+				opacity:0,
+				y:200,
+				scrollTrigger: {
+					trigger: element.querySelector("#section5"),
+					start: "207% 1%",
+					end: "210% 1%",
+		// 			markers:true,
+					scrub: true,
+					ease: Power2.easeOut,
+				},
+			}
+		)
 
 		gsap.fromTo(
 			element.querySelector("#section5"),
@@ -274,11 +652,42 @@ function App() {
 				},
 			}
 		);
-	  }, []);
 
-	  useEffect(() => {
-		const element = container.current;
+		gsap.from(
+			element.querySelector('#section6 .img img'),
+			{
+				opacity:0,
+				y:200,
+				scrollTrigger: {
+					trigger: element.querySelector("#section6"),
+					start: "240% 1%",
+					end: "243% 1%",
+					// markers:true,
+					scrub: true,
+					ease: Power2.easeOut,
+				},
+			}
+		)
 
+		gsap.fromTo(
+			element.querySelector('#section6 .img img'),
+			{
+				opacity:1,
+			},
+			{
+				opacity:0,
+				y:200,
+				scrollTrigger: {
+					trigger: element.querySelector("#section6"),
+					start: "252% 1%",
+					end: "255% 1%",
+		// 			markers:true,
+					scrub: true,
+					ease: Power2.easeOut,
+				},
+			}
+		)
+	 
 		gsap.fromTo(
 			element.querySelector("#section6"),
 			{
@@ -318,6 +727,41 @@ function App() {
 				},
 			}
 		);
+
+		gsap.from(
+			element.querySelector('#section7 .img img:first-child'),
+			{
+				opacity:0,
+				x:-250,
+				scrollTrigger: {
+					trigger: element.querySelector("#section7"),
+					start: "289% 1%",
+					end: "294% 1%",
+					// markers:true,
+					scrub: true,
+					ease: Power2.easeOut,
+				},
+				duration: 1,
+			}
+		)
+
+		gsap.from(
+			element.querySelector('#section7 .img img:last-child'),
+			{
+				opacity:0,
+				x:250,
+				scrollTrigger: {
+					trigger: element.querySelector("#section7"),
+					start: "289% 1%",
+					end: "294% 1%",
+					// markers:true,
+					scrub: true,
+					ease: Power2.easeOut,
+				},
+				duration: 1,
+			}
+		)
+
 	  }, []);
 
 	return (
@@ -423,9 +867,9 @@ function App() {
 					<div className="rightSection">
 						<div className="img" style={{display:"block"}}>
 							<img alt="" style={{width:"50%",maxWidth:"300px",top:"-35px",left:"0px",position:"absolute"}} src="/images/pizza_box.png"/>
-							<img alt="" style={{top:"-140px",maxWidth:"169px",right:"30px",position:"absolute",width:"28%"}} src="/images/dominos-bread.png"/>
-							<img alt="" style={{top:"120px",maxWidth:"200px",right:"125px",position:"absolute",width:"35%"}} src="/images/developers-for-social-media-app.png"/>
 							<img alt="" style={{bottom:"-20px",maxWidth:"240px",left:"75px",position:"absolute",width:"40%"}} src="/images/domi-img1.png"/>
+							<img alt="" style={{top:"120px",maxWidth:"200px",right:"125px",position:"absolute",width:"35%"}} src="/images/developers-for-social-media-app.png"/>
+							<img alt="" style={{top:"-140px",maxWidth:"169px",right:"30px",position:"absolute",width:"28%"}} src="/images/dominos-bread.png"/>
 							<img alt="" style={{bottom:"-80px",maxWidth:"300px",right:"-10px",position:"absolute",width:"50%"}} src="/images/dominos-bread1.png"/>
 						</div>
 					</div>
