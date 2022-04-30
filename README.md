@@ -1,3 +1,4 @@
 # React JavaScript-Scroll-Trigger
 
-## https://reacthiringtask.herokuapp.com/
+#### To check app visit
+> [Heroku](https://reacthiringtask.herokuapp.com/)
